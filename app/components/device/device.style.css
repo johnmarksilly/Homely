@@ -1,0 +1,83 @@
+.device {
+    max-width: 40em;
+    height: 12em;
+    transition: transform 0.1s;
+}
+
+    .device:not(:first-child) {
+        margin-left: 1.8em;
+    }
+
+    .device:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+
+    .device .content {
+        padding: 0 2em;
+        min-width: 10em;
+        color: #D4D4D4;
+        background: #2A4B61;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+
+        .device .content h1 {
+            font-size: 2em;
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
+        }
+
+            .device .content h1:first-child {
+                margin-bottom: 0.4em;
+            }
+
+            .device .content h1:last-child {
+                margin-top: 0.4em;
+            }
+
+    .device .header {
+        padding: 0 2em;
+        color: #8A8A8A;
+        background: #EEF5F2;
+        border-top-right-radius: 1em;
+    }
+
+        .device .header h1 {
+            font-size: 2.2em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .device .header .details {
+            height: 3em;
+        }
+            .device .header .details span {
+                font-size: 1.8em;
+                font-weight: 100;
+            }
+
+            .device .header .details span:first-child {
+                margin-right: 0.6em;
+            }
+
+            .device .header .details span:last-child {
+                margin-left: 0.6em;
+            }
+
+    .device .divider {
+        height: 0.3em;
+    }
+
+    .device .sub-header {
+        height: 4em;
+        color: #738594;
+        background: #213647;
+        border-bottom-right-radius: 1em;
+    }
+
+        .device .sub-header span {
+            font-size: 1.4em;
+            text-align: center;
+        }

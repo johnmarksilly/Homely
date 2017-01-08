@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Homely</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/main.css" rel="stylesheet"/>
+    </head>
+    <body ng-app="homely" style="font-size: 10px;">
+        <div layout="row">
+            <section layout="column" layout-align="start center" class="main-sidebar">
+                <div id="heading" layout="column" layout-align="center center">
+                    <i class="material-icons">cloud</i>
+                    <span class="title">Homely</span>
+                </div>
+                <div class="button-container">
+                    <div class="horizontal-divider"></div>
+                    <div layout="row" layout-align="start center" class="button">
+                        <i class="material-icons">developer_board</i>
+                        <span class="title">Devices</span>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                </div>
+                <div flex></div>
+                <div class="button-container">
+                    <div class="horizontal-divider"></div>
+                    <div layout="row" layout-align="start center" class="button">
+                        <i class="material-icons">feedback</i>
+                        <span class="title">Feedback</span>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div layout="row" layout-align="start center" class="button">
+                        <i class="material-icons">settings</i>
+                        <span class="title">Settings</span>
+                    </div>
+                </div>
+            </section>
+            <section flex ui-view></section>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-aria.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+
+        <!-- Module -->
+        <script src="app/homely.module.js"></script>
+        <script src="app/homely.config.js"></script>
+
+        <!-- Components -->
+            <!-- Device -->
+            <script src="app/components/device/device.controller.js"></script>
+            <script src="app/components/device/device.directive.js"></script>
+            <link rel="stylesheet" href="app/components/device/device.style.css"/>
+
+        <!-- Views -->
+            <!-- Devices -->
+            <script src="app/devices/devices.controller.js"></script>
+            <link rel="stylesheet" href="app/devices/devices.style.css"/>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<div layout="row" class="device" ng-click="deviceVm.details()" flex>
+    <div layout="column" layout-align="center stretch" class="content">
+        <div ng-repeat="current in deviceVm.device.currentValue">
+            <div ng-if="$last && $index != 0" class="horizontal-divider"></div>
+            <h1>{{current.value + current.units}}</h1>
+        </div>
+    </div>
+    <div layout="column" flex>
+        <div layout="column" layout-align="center stretch" class="header" flex>
+            <div>
+                <h1 class="no-wrap">{{deviceVm.device.name}}</h1>
+                <div layout="row" layout-align="stretch center" class="details">
+                    <span>{{"Type: " + device.type}}</span>
+                    <div class="vertical-divider"></div>
+                    <span>{{"Location: " + device.location}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="divider pink-gradient"></div>
+        <div layout="row" layout-align="center center" class="sub-header">
+            <span class="no-wrap">MAC — {{deviceVm.device.mac}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #202026;
+    overflow: hidden;
+}
+
+.main-sidebar {
+    width: 6em;
+    height: 100%;
+    background: white;
+    transition: width 0.2s;
+}
+
+    .main-sidebar #heading {
+        margin: 2em auto;
+    }
+
+        .main-sidebar #heading i {
+            margin-top: 1em;
+        }
+
+        .main-sidebar #heading .title {
+            font-size: 3.4em;
+            font-weight: 800;
+            text-align: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: transform 0.4s cubic-bezier() 0s, opacity 0.4s cubic-bezier() 0s;
+        }
+
+    .main-sidebar:hover {
+        width: 30em;
+    }
+
+        .main-sidebar:hover .button .title {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 0.4s 0s;
+        }
+
+        .main-sidebar:hover #heading .title {
+            transition: transform 0.4s cubic-bezier() 0s, opacity 0.4s cubic-bezier() 0s;
+        }
+
+    .main-sidebar .button-container {
+        width: inherit;
+    }
+
+    .button {
+        overflow: hidden;
+        width: inherit;
+        padding: 1em;
+    }
+
+        .button:hover {
+            color: #ff7bac;
+            cursor: pointer;
+        }
+
+        .button i {
+            margin-left: 0.3em;
+        }
+
+        .button .title {
+            font-size: 2em;
+            margin-left: 0.4em;
+            box-sizing: border-box;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.4);
+            transition: all 0.4s;
+        }
+
+.horizontal-divider {
+    margin: 0 1em;
+    box-sizing: border-box;
+    border-top: solid 1px #D4D4D4;
+}
+
+.vertical-divider {
+    padding: 0.2em 0;
+    box-sizing: border-box;
+    border-left: solid 1px #D4D4D4;
+}
+
+.no-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pink-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7bac+0,93278f+100 */
+    background: #ff7bac; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ff7bac 0%, #93278f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ff7bac 0%,#93278f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ff7bac 0%,#93278f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7bac', endColorstr='#93278f',GradientType=1 ); /* IE6-9 */
+
+}
